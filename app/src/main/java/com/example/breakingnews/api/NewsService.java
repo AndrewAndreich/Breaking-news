@@ -8,7 +8,7 @@ import retrofit2.http.Query;
 
 public interface NewsService {
 
-    @GET("/top-headlines")
+    @GET("top-headlines")
     Call<BaseResponse> getNewsByCategory(@Query("apiKey") String apiKey,
                                          @Query("country") String country,
                                          @Query("category") String category);

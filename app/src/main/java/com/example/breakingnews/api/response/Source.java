@@ -1,4 +1,4 @@
-package com.example.breakingnews.api;
+package com.example.breakingnews.api.response;
 
 import com.google.gson.annotations.SerializedName;
 

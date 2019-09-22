@@ -1,6 +1,5 @@
 package com.example.breakingnews.api.response;
 
-import com.example.breakingnews.api.Source;
 import com.google.gson.annotations.SerializedName;
 
 public class Article {

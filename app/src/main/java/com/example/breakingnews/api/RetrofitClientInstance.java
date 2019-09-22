@@ -19,4 +19,8 @@ public class RetrofitClientInstance {
         }
         return retrofit;
     }
+
+    public static NewsService getNewsService() {
+        return getRetrofitInstance().create(NewsService.class);
+    }
 }
