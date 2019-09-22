@@ -31,6 +31,10 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Ca
         notifyDataSetChanged();
     }
 
+    public List<Article> getDataList() {
+        return dataList;
+    }
+
     @NonNull
     @Override
     public CategoriesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -41,7 +45,6 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Ca
     @Override
     public void onBindViewHolder(@NonNull CategoriesViewHolder holder, int position) {
         holder.title.setText(dataList.get(position).getTitle());
-        holder.description.setText(dataList.get(position).getDescription());
         Glide.with(context).load(dataList.get(position).getUrlToImage()).into(holder.image);
     }
 
@@ -54,14 +57,12 @@ public class CategoriesAdapter extends RecyclerView.Adapter<CategoriesAdapter.Ca
 
         ImageView image;
         TextView title;
-        TextView description;
 
         CategoriesViewHolder(@NonNull View itemView) {
             super(itemView);
 
             image = itemView.findViewById(R.id.category_image);
             title = itemView.findViewById(R.id.title);
-            description = itemView.findViewById(R.id.description);
         }
     }
 }
