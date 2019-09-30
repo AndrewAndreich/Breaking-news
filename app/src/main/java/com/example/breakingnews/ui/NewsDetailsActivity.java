@@ -18,9 +18,9 @@ public class NewsDetailsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_news_details);
 
         Intent intent = getIntent();
-        String imageUrl = intent.getStringExtra(MainActivity.IMAGE_URL_KEY);
-        String title = intent.getStringExtra(MainActivity.TITLE_KEY);
-        String description = intent.getStringExtra(MainActivity.CONTENT_KEY);
+        String imageUrl = intent.getStringExtra(NewsActivity.IMAGE_URL_KEY);
+        String title = intent.getStringExtra(NewsActivity.TITLE_KEY);
+        String description = intent.getStringExtra(NewsActivity.CONTENT_KEY);
 
         ImageView newsImage = findViewById(R.id.news_image);
         TextView newsTitle = findViewById(R.id.title);

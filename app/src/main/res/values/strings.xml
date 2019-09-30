@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Breaking News</string>
     <string name="country_russia">ru</string>
+    <string name="error_empty_category">Произошла ошибка, перезапустите приложение</string>
 </resources>
